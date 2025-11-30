@@ -1,0 +1,5 @@
+title: "Beyond Accuracy: Evaluating User Satisfaction in Movie Recommendation Systems Using Accuracy, Novelty, and Diversity Metrics"
+theme: minima
+
+# Optional: basic config
+description: "Research project comparing recommender system models on accuracy, ranking, novelty, and diversity using MovieLens data."
