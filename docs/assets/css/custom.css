@@ -1,183 +1,107 @@
-/* -------- Base layout -------- */
-
+/* Base layout tweaks */
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f4f7fb;
-  color: #1f2933;
+  background: #f5f7fb;
+  color: #222;
 }
 
-.page-wrapper {
-  max-width: 980px;
-  margin: 2rem auto 3rem auto;
-  padding: 0 1.5rem;
+/* Make the content narrower and add breathing room */
+.site-content {
+  max-width: 960px;
+  margin: 2rem auto 4rem auto;
+  padding: 0 1.25rem;
 }
 
-/* -------- Top navigation -------- */
-
-.top-nav {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.75rem 1.5rem;
-  background: rgba(255, 255, 255, 0.94);
-  border-bottom: 1px solid rgba(15, 23, 42, 0.07);
-  backdrop-filter: blur(6px);
-}
-
-.top-nav .nav-title {
-  font-weight: 600;
-  font-size: 0.98rem;
-}
-
-.top-nav .nav-links a {
-  margin-left: 1.2rem;
-  text-decoration: none;
-  color: #4b5563;
-  font-size: 0.9rem;
-}
-
-.top-nav .nav-links a:hover {
-  color: #111827;
-}
-
-/* -------- Hero section -------- */
-
+/* Hero section */
 .hero {
-  background: radial-gradient(circle at top left, #1f3b73, #020617);
-  color: #f9fafb;
-  padding: 3rem 1.5rem 3.5rem 1.5rem;
+  background: radial-gradient(circle at top left, #304ffe, #1a237e);
+  color: #fff;
+  border-radius: 20px;
+  padding: 2.4rem 2.6rem;
+  margin: 1rem 0 2.5rem 0;
+  box-shadow: 0 16px 40px rgba(10, 24, 61, 0.25);
 }
 
-.hero-content {
-  max-width: 980px;
-  margin: 0 auto;
+.hero-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  opacity: 0.85;
+  margin-bottom: 0.4rem;
 }
 
-.hero-title {
-  margin: 0 0 1rem 0;
-  font-size: 2.2rem;
-  font-weight: 700;
+.hero h1 {
+  font-size: 2.1rem;
+  margin: 0 0 0.5rem 0;
 }
 
-.hero-title .italic {
-  font-weight: 400;
+.hero h1 em {
   font-style: italic;
+  font-weight: 600;
 }
 
 .hero-subtitle {
-  max-width: 620px;
-  margin: 0 0 1.2rem 0;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #e5e7eb;
+  font-size: 0.98rem;
+  max-width: 36rem;
+  margin: 0.4rem 0 0.8rem 0;
+  opacity: 0.94;
 }
 
 .hero-meta {
-  font-size: 0.95rem;
-  color: #e5e7eb;
-}
-
-/* -------- Cards -------- */
-
-.card {
-  background: #ffffff;
-  border-radius: 1rem;
-  padding: 1.8rem 1.8rem 2rem 1.8rem;
-  margin-top: 1.5rem;
-  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.06);
-}
-
-.card h2 {
+  font-size: 0.9rem;
   margin-top: 0.4rem;
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
 }
 
-.card h3 {
-  margin-top: 1.4rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.05rem;
+/* Headings & copy */
+h2 {
+  margin-top: 2.2rem;
+  margin-bottom: 0.8rem;
 }
 
-.card p {
-  line-height: 1.6;
+p {
+  line-height: 1.7;
 }
 
-.card ul {
-  padding-left: 1.1rem;
+/* “Pill” labels for sections */
+.pill {
+  display: inline-block;
+  padding: 0.18rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: #e3f2fd;
+  color: #0d47a1;
+  margin-bottom: 0.6rem;
 }
 
-.card li {
+.pill-section {
+  margin-top: 0.4rem;
+}
+
+/* Lists */
+ul {
+  margin-top: 0.3rem;
+  margin-bottom: 0.9rem;
+}
+
+ul li {
   margin-bottom: 0.25rem;
 }
 
-/* -------- Section label pill -------- */
-
-.pill-label {
-  display: inline-block;
-  padding: 0.2rem 0.6rem;
-  border-radius: 999px;
-  background: #e0f2fe;
-  color: #0369a1;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
+/* Horizontal rule spacing */
+hr {
+  margin: 2rem 0 1.5rem 0;
+  border: none;
+  border-top: 1px solid #e0e3ef;
 }
 
-/* -------- Figures / images -------- */
-
-.figure-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-gap: 1.2rem;
-  margin: 1rem 0 1.5rem 0;
-}
-
-figure {
-  margin: 0;
-  background: #f9fafb;
-  border-radius: 0.75rem;
-  padding: 0.75rem;
-  border: 1px solid rgba(148, 163, 184, 0.4);
-}
-
-figure img {
-  width: 100%;
-  border-radius: 0.5rem;
-  display: block;
-}
-
-figcaption {
-  font-size: 0.8rem;
-  color: #4b5563;
-  margin-top: 0.4rem;
-}
-
-/* -------- Links -------- */
-
+/* Links */
 a {
-  color: #2563eb;
+  color: #1a237e;
 }
 
 a:hover {
-  color: #1d4ed8;
-}
-
-/* -------- Small-screen tweaks -------- */
-
-@media (max-width: 640px) {
-  .hero-title {
-    font-size: 1.7rem;
-  }
-  .top-nav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.35rem;
-  }
+  color: #3949ab;
 }
