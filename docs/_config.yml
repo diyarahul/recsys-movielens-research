@@ -1,5 +1,18 @@
-title: "Beyond Accuracy: Evaluating User Satisfaction in Movie Recommendation Systems Using Accuracy, Novelty, and Diversity Metrics"
-theme: minima
+title: "Beyond Accuracy: Evaluating User Satisfaction in Movie Recommendations"
+description: "Comparing accuracy, ranking quality, novelty, and diversity for different recommender models on the MovieLens datasets."
+theme: jekyll-theme-cayman
 
-# Optional: basic config
-description: "Research project comparing recommender system models on accuracy, ranking, novelty, and diversity using MovieLens data."
+# These two are important for a *project* site
+url: "https://diyarahul.github.io"
+baseurl: "/recsys-movielens-research"
+
+# Let Jekyll know we have custom assets
+plugins:
+  - jekyll-seo-tag
+
+# Make sure pages render with a default layout
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

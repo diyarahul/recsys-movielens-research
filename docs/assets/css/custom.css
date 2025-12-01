@@ -1,107 +1,99 @@
-/* Base layout tweaks */
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #f5f7fb;
-  color: #222;
-}
-
-/* Make the content narrower and add breathing room */
+/* Make the main content narrower and centered */
+.main-content,
+.page-content,
 .site-content {
-  max-width: 960px;
+  max-width: 950px;
   margin: 2rem auto 4rem auto;
-  padding: 0 1.25rem;
+  padding: 0 1.5rem;
 }
 
-/* Hero section */
-.hero {
-  background: radial-gradient(circle at top left, #304ffe, #1a237e);
-  color: #fff;
-  border-radius: 20px;
-  padding: 2.4rem 2.6rem;
-  margin: 1rem 0 2.5rem 0;
-  box-shadow: 0 16px 40px rgba(10, 24, 61, 0.25);
+/* Hero card at the top */
+.hero-card {
+  background: linear-gradient(135deg, #3949ab, #1e88e5);
+  color: #ffffff;
+  border-radius: 18px;
+  padding: 1.8rem 2.2rem;
+  box-shadow: 0 14px 35px rgba(15, 35, 95, 0.35);
+  margin-bottom: 2.5rem;
 }
 
 .hero-kicker {
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.78rem;
-  opacity: 0.85;
-  margin-bottom: 0.4rem;
+  letter-spacing: 0.15em;
+  font-size: 0.75rem;
+  opacity: 0.9;
+  margin: 0 0 0.25rem 0;
 }
 
-.hero h1 {
-  font-size: 2.1rem;
+.hero-card h1 {
   margin: 0 0 0.5rem 0;
+  font-size: 2.1rem;
 }
 
-.hero h1 em {
+.hero-card h1 em {
   font-style: italic;
-  font-weight: 600;
 }
 
 .hero-subtitle {
   font-size: 0.98rem;
-  max-width: 36rem;
-  margin: 0.4rem 0 0.8rem 0;
-  opacity: 0.94;
+  max-width: 34rem;
+  margin: 0 0 0.6rem 0;
 }
 
 .hero-meta {
   font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+/* Section blocks */
+.section-block {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 1.4rem 1.6rem 1.2rem 1.6rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+}
+
+.section-block h2 {
   margin-top: 0.4rem;
 }
 
-/* Headings & copy */
-h2 {
-  margin-top: 2.2rem;
-  margin-bottom: 0.8rem;
+/* Pills */
+.pill {
+  display: inline-block;
+  padding: 0.22rem 0.8rem;
+  border-radius: 999px;
+  background: #e3f2fd;
+  color: #0d47a1;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
 }
 
+/* Figures */
+.result-figure {
+  margin: 1.2rem 0 0.6rem 0;
+  text-align: center;
+}
+
+.result-figure img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+.result-figure figcaption {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.4rem;
+}
+
+/* Typography tweaks */
 p {
   line-height: 1.7;
 }
 
-/* “Pill” labels for sections */
-.pill {
-  display: inline-block;
-  padding: 0.18rem 0.7rem;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  background: #e3f2fd;
-  color: #0d47a1;
-  margin-bottom: 0.6rem;
-}
-
-.pill-section {
-  margin-top: 0.4rem;
-}
-
-/* Lists */
 ul {
-  margin-top: 0.3rem;
-  margin-bottom: 0.9rem;
-}
-
-ul li {
-  margin-bottom: 0.25rem;
-}
-
-/* Horizontal rule spacing */
-hr {
-  margin: 2rem 0 1.5rem 0;
-  border: none;
-  border-top: 1px solid #e0e3ef;
-}
-
-/* Links */
-a {
-  color: #1a237e;
-}
-
-a:hover {
-  color: #3949ab;
+  margin-top: 0.2rem;
 }
